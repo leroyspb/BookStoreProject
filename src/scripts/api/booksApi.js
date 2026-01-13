@@ -1,4 +1,6 @@
-const API_KEY = import.meta.env.API_KEY;
+import CONFIG from './config.js';
+
+const API_KEY = CONFIG.API_KEY;
 const BOOKS_PER_PAGE = 6;
 
 const categoryQueries = {
