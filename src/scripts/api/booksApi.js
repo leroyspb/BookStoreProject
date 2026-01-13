@@ -1,4 +1,4 @@
-const API_KEY = "AIzaSyDljF3mmU2TrLFTq74X_Zr2mq5PERSMlqg";
+const API_KEY = import.meta.env.API_KEY;
 const BOOKS_PER_PAGE = 6;
 
 const categoryQueries = {
