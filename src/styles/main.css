@@ -1,0 +1,54 @@
+/* Импорт базовых стилей */
+@import './base/reset.css';
+@import './base/variables.css';
+@import './base/typography.css';
+
+/* Импорт компонентов */
+@import '../components/Header/Header.css';
+@import '../components/Slider/Slider.css';
+@import '../components/Bookcard/Bookcard.css';
+
+/* Глобальные стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    color: gray;
+    font-weight: bold
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: #5C6A79;
+    background-color: #FFFFFF;
+}
+
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+
+
+
+
+

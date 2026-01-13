@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Bookshop</title>
+</head>
+
+<body>
+    <div class="wrapper">
+    <!-- Компоненты будут вставлены через JavaScript -->
+    <header id="header"></header>
+    
+    <main>
+        <section id="slider" class="section"></section>
+        
+        <div class="promo-banners">
+            <a href="#" target="_blank">
+                <img class="promo1" src="assets/images/png/promo 1.png" alt="Promo 1">
+            </a>
+            <a href="#" target="_blank">
+                <img class="promo2" src="assets/images/png/promo 2.png" alt="Promo 2">
+            </a>
+        </div>
+        
+        <div class="bookshop_market">
+                <div class="bookshop_market__nav">
+                    <a href="#" class="category-link active" data-category="architecture">
+                        Architecture
+                    </a>
+                    <a href="#" class="category-link"data-category="art">
+                        Art & Fashion
+                    </a>
+                    <a href="#" class="category-link" data-category="biography">
+                        Biography
+                    </a>
+                    <a href="#" class="category-link" data-category="business">
+                        Business
+                    </a>
+                    <a href="#" class="category-link" data-category="crafts">
+                        Crafts & Hobbies
+                    </a>
+                    <a href="#" class="category-link" data-category="drama">
+                        Drama
+                    </a>
+                    <a href="#" class="category-link" data-category="fiction">
+                        Fiction
+                    </a>
+                    <a href="#" class="category-link" data-category="food">
+                        Food & Drink
+                    </a>
+                    <a href="#" class="category-link" data-category="health">
+                        Health & Wellbeing
+                    </a>
+                    <a href="#" class="category-link" data-category="history">
+                        History & Politics
+                    </a>
+                    <a href="#" class="category-link" data-category="humor">
+                        Humor
+                    </a>
+                    <a href="#" class="category-link" data-category="poetry">
+                        Poetry
+                    </a>
+                    <a href="#" class="category-link" data-category="psychology">
+                        Psychology
+                    </a>
+                    <a href="#" class="category-link" data-category="science">
+                        Science
+                    </a>
+                    <a href="#" class="category-link" data-category="technology">
+                        Technology
+                    </a>
+                    <a href="#" class="category-link" data-category="travel">
+                        Travel & Maps
+                    </a>
+                </div>   
+
+            <section class="books-section">
+                <div id="books-container" class="books-grid"></div>
+                                <div class="load-more-section">
+                <button id="load-more-btn" class="load-more-btn">
+                    <span class="btn-text">Load More</span>
+                    <span class="btn-spinner" style="display: none;">
+                        <i class="fas fa-spinner fa-spin"></i>
+                    </span>
+                </button>
+                <div id="no-more-books" class="no-more-books" style="display: none;">
+                    Нет больше книг в этой категории
+                </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <!-- JavaScript будет вставлен автоматически -->
+     </div>
+</body>
+</html>

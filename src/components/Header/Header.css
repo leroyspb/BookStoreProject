@@ -1,0 +1,59 @@
+/* Стили только для Header */
+#nav__list--active {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    color: black;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 40px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1440px;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+}
+
+.nav__list {
+    display: flex;
+    text-transform: uppercase;
+    list-style: none;
+    gap: 4em;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.nav__icons {
+    display: flex;
+    gap: 4em;
+    position: relative;
+}
+
+.container {
+    padding-top: 4rem;
+    width: 100%;
+}
+
+.cart-counter {
+    position: absolute;
+    color: #FFFFFF;
+    background-color: #FF353A;
+    right: -5px;
+    top: 7px;
+    font-size: 10px;
+    font-family: "Montserrat", sans-serif;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: none;
+}

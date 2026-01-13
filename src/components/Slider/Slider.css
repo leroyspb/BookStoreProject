@@ -1,0 +1,61 @@
+/* Слайдер контейнер */
+.slider-container {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+
+}
+
+.dots-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+}
+
+.dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ddd;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.dot-circle {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #EFEEF6;
+    transition: transform 0.3s ease;
+}
+
+/* Активная точка */
+.dot.active {
+    background-color: #9E98DC;
+
+}
+
+.dot.active .dot-circle {
+    background-color: #9E98DC;
+}
+
+.promo1 {
+    position: absolute;
+    top: 155px;
+    right: 74px;
+}
+
+.promo2 {
+    position: absolute;
+    right: 0;
+    top: 420px;
+    max-width: 50%;
+    height: auto;
+}
+
