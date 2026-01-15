@@ -1,6 +1,6 @@
-import CONFIG from './config.js';
+import { API_CONFIG } from '../../../config.js';
 
-const API_KEY = CONFIG.API_KEY;
+const API_KEY = API_CONFIG.API_KEY;
 const BOOKS_PER_PAGE = 6;
 
 const categoryQueries = {
@@ -37,7 +37,7 @@ export class BooksApi {
         const startIndex = page * BOOKS_PER_PAGE;
         const query = categoryQueries[category] || categoryQueries.architecture;
         
-        const url = `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(query)}&startIndex=${startIndex}&maxResults=${BOOKS_PER_PAGE}&key=${API_KEY}`;
+        const url = `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(query)}&startIndex=${startIndex}&maxResults=${BOOKS_PER_PAGE}&key=${API_CONFIG.API_KEY}`;
         
         try {
             const response = await fetch(url);
@@ -77,4 +77,20 @@ export class BooksApi {
     getCurrentPage() {
         return this.currentPage;
     }
+
+     setActiveCategory(category) {
+        this.currentCategory = category;
+        
+        // Удаляем класс active со всех кнопок
+        document.querySelectorAll('.category-link').forEach(a => {
+            a.classList.remove('active');
+        });
+        
+        // Добавляем класс active к текущей кнопке
+        const activelink = document.querySelector(`[data-category="${category}"]`);
+        if (activelink) {
+            activelink.classList.add('active');
+        }
+    }
 }
+
